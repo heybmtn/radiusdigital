@@ -22,8 +22,116 @@
     </style>
   </head>
   <body class="min-h-screen bg-white text-gray-900">
-    <!-- Include your full site content here -->
-    <!-- Example: Hero, Problem, Solution, Offer, Contact sections -->
+    <!-- Navbar -->
+    <header class="w-full fixed top-0 left-0 bg-[#1d3557] z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">Radius Digital</div>
+        <nav class="space-x-6 text-white font-medium hidden md:block">
+          <a href="#problem" class="hover:text-[#f1faee]">Problem</a>
+          <a href="#solution" class="hover:text-[#f1faee]">Solution</a>
+          <a href="#offer" class="hover:text-[#f1faee]">Offer</a>
+          <a href="#contact" class="hover:text-[#f1faee]">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-[#f1faee] pt-40 pb-24 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight text-[#1d3557] mb-6">
+          Turn Your Google Business Profile Into a Customer Magnet
+        </h1>
+        <p class="text-lg md:text-xl text-gray-700 mb-8">
+          You’ve already got a listing — now <span class="font-semibold">Radius Digital</span> will optimise it to bring you calls, clicks, and customers.
+        </p>
+        <a href="#offer" class="inline-block bg-[#e63946] hover:bg-[#d62839] text-white rounded-full px-10 py-4 text-lg font-semibold shadow">
+          Optimise My Profile
+        </a>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-20 px-6 bg-white">
+      <div class="max-w-5xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-bold text-[#1d3557]">The Problem</h2>
+        <p class="text-gray-700 mt-4">You’ve claimed your Google Business Profile. Brilliant. But here’s the reality:</p>
+      </div>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="bg-[#f1faee] p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl text-[#e63946] mb-3">Low Visibility</h3>
+          <p class="text-gray-700">You’re not appearing consistently in Google Maps or local search, meaning fewer customers find you.</p>
+        </div>
+        <div class="bg-[#f1faee] p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl text-[#e63946] mb-3">Lost Leads</h3>
+          <p class="text-gray-700">Competitors are outranking you — and taking the enquiries that should have been yours.</p>
+        </div>
+        <div class="bg-[#f1faee] p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl text-[#e63946] mb-3">Untapped Potential</h3>
+          <p class="text-gray-700">Your profile sits half-finished, missing opportunities to attract and convert new business.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-20 px-6 bg-[#f1faee]">
+      <div class="max-w-5xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-bold text-[#1d3557]">Our Solution</h2>
+        <p class="text-gray-700 mt-4">We transform your existing Google Business Profile into a lead-generating machine.</p>
+      </div>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl text-[#e63946] mb-3">Audit & Optimisation</h3>
+          <p class="text-gray-700">Categories, descriptions, services, images, and opening hours refined for maximum impact.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl text-[#e63946] mb-3">Content & Reviews</h3>
+          <p class="text-gray-700">Fresh weekly posts and proactive review management to keep your profile trusted and active.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-xl text-[#e63946] mb-3">Citation Building</h3>
+          <p class="text-gray-700">Consistent business details across top UK directories to boost local search rankings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" class="py-20 px-6 bg-white text-center">
+      <h2 class="text-3xl font-bold text-[#1d3557] mb-6">Exclusive Launch Weekend Offer</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-700">
+        Optimise your existing profile for just <span class="font-semibold">£299 in the first month</span> (regularly £399/month).
+      </p>
+      <div class="max-w-md mx-auto text-left space-y-3 mb-8 text-gray-700">
+        <p>✔ Comprehensive profile audit + optimisation</p>
+        <p>✔ 4 weekly posts to stay visible and relevant</p>
+        <p>✔ Review monitoring & response</p>
+        <p>✔ Citation building across top UK directories</p>
+        <p>✔ Monthly performance report</p>
+      </div>
+      <a href="#contact" class="inline-block bg-[#e63946] hover:bg-[#d62839] text-white rounded-full px-10 py-4 text-lg font-semibold shadow">
+        Get Started Today
+      </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-[#f1faee]">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-bold text-[#1d3557]">Contact Us</h2>
+        <p class="text-gray-700 mt-4">Have questions or ready to get started? Send us a message.</p>
+      </div>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="max-w-3xl mx-auto grid gap-6">
+        <input type="text" name="name" placeholder="Your Name" class="border border-gray-300 rounded-lg px-4 py-3 w-full" required />
+        <input type="email" name="email" placeholder="Your Email" class="border border-gray-300 rounded-lg px-4 py-3 w-full" required />
+        <textarea name="message" placeholder="Your Message" class="border border-gray-300 rounded-lg px-4 py-3 w-full" rows="5" required></textarea>
+        <button type="submit" class="bg-[#e63946] hover:bg-[#d62839] text-white rounded-full px-10 py-4 text-lg font-semibold shadow">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1d3557] text-white py-10 text-center text-sm">
+      © <script>document.write(new Date().getFullYear())</script> Radius Digital — helping UK businesses turn listings into leads.
+    </footer>
 
     <!-- Tailwind defer loading -->
     <script defer src="https://cdn.tailwindcss.com"></script>
