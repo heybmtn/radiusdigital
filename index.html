@@ -7,9 +7,14 @@
     <meta name="keywords" content="Google Business Profile, Local SEO, GBP Optimisation, Radius Digital, Local Listings, UK SEO" />
     <meta name="author" content="Radius Digital" />
     <title>Local SEO Experts | Radius Digital</title>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {}
+        }
+      }
+    </script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
       body {
@@ -32,7 +37,6 @@
           <a href="#offer" class="hover:text-[#f1faee]">Offer</a>
           <a href="#contact" class="hover:text-[#f1faee]">Contact</a>
         </nav>
-        <!-- Mobile toggle (optional burger menu could be added here) -->
       </div>
     </header>
 
@@ -133,8 +137,5 @@
     <footer class="bg-[#1d3557] text-white py-10 text-center text-sm">
       © <script>document.write(new Date().getFullYear())</script> Radius Digital — helping UK businesses turn listings into leads.
     </footer>
-
-    <!-- Tailwind defer loading -->
-    <script defer src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
