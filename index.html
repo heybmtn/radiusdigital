@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Radius Digital helps UK businesses turn their Google Business Profile into a lead-generating machine through optimisation, reviews, and citations." />
     <meta name="keywords" content="Google Business Profile, Local SEO, GBP Optimisation, Radius Digital, Local Listings, UK SEO" />
     <meta name="author" content="Radius Digital" />
     <title>Local SEO Experts | Radius Digital</title>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
-          extend: {}
+          extend: {
+            colors: {
+              primary: '#00A652'
+            },
+            borderRadius: {
+              button: '0.375rem'
+            }
+          }
         }
       }
     </script>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
       body {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -49,7 +59,7 @@
         <p class="text-lg md:text-xl text-gray-700 mb-8">
           You’ve already got a listing — now <span class="font-semibold">Radius Digital</span> will optimise it to bring you calls, clicks, and customers.
         </p>
-        <a href="#offer" class="inline-block bg-[#e63946] hover:bg-[#d62839] text-white rounded-full px-10 py-4 text-lg font-semibold shadow">
+        <a href="#offer" class="inline-block bg-primary hover:bg-green-700 text-white rounded-button px-10 py-4 text-lg font-semibold shadow">
           Optimise My Profile
         </a>
       </div>
@@ -101,18 +111,33 @@
 
     <!-- Offer Section -->
     <section id="offer" class="py-20 px-6 bg-white text-center">
-      <h2 class="text-3xl font-bold text-[#1d3557] mb-6">Exclusive Launch Weekend Offer</h2>
+      <h2 class="text-3xl font-bold text-[#1d3557] mb-6">Your Local SEO Growth Plan</h2>
       <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-700">
-        Optimise your existing profile for just <span class="font-semibold">£299 in the first month</span> (regularly £399/month).
+        Choose the best option for your business:
       </p>
-      <div class="max-w-md mx-auto text-left space-y-3 mb-8 text-gray-700">
-        <p>✔ Comprehensive profile audit + optimisation</p>
-        <p>✔ 4 weekly posts to stay visible and relevant</p>
-        <p>✔ Review monitoring & response</p>
-        <p>✔ Citation building across top UK directories</p>
-        <p>✔ Monthly performance report</p>
+      <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8 mb-12 text-left">
+        <div class="bg-[#f1faee] p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold text-[#1d3557] mb-2">One-Off Optimisation – £299</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Full profile audit & optimisation</li>
+            <li>Image, category & description improvements</li>
+            <li>Keyword & conversion-focused updates</li>
+          </ul>
+        </div>
+        <div class="bg-[#f1faee] p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold text-[#1d3557] mb-2">Monthly Growth & Management – £199/mo</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Weekly Google Posts</li>
+            <li>Review monitoring & response</li>
+            <li>Directory citation building</li>
+            <li>Performance reporting</li>
+          </ul>
+        </div>
       </div>
-      <a href="#contact" class="inline-block bg-[#e63946] hover:bg-[#d62839] text-white rounded-full px-10 py-4 text-lg font-semibold shadow">
+      <p class="text-lg text-[#e63946] font-semibold mb-6">
+        Area exclusivity available — sign up before your competitor does!
+      </p>
+      <a href="#contact" class="inline-block bg-primary hover:bg-green-700 text-white rounded-button px-10 py-4 text-lg font-semibold shadow">
         Get Started Today
       </a>
     </section>
@@ -127,7 +152,7 @@
         <input type="text" name="name" placeholder="Your Name" class="border border-gray-300 rounded-lg px-4 py-3 w-full" required />
         <input type="email" name="email" placeholder="Your Email" class="border border-gray-300 rounded-lg px-4 py-3 w-full" required />
         <textarea name="message" placeholder="Your Message" class="border border-gray-300 rounded-lg px-4 py-3 w-full" rows="5" required></textarea>
-        <button type="submit" class="bg-[#e63946] hover:bg-[#d62839] text-white rounded-full px-10 py-4 text-lg font-semibold shadow">
+        <button type="submit" class="bg-primary hover:bg-green-700 text-white rounded-button px-10 py-4 text-lg font-semibold shadow">
           Send Message
         </button>
       </form>
@@ -135,7 +160,10 @@
 
     <!-- Footer -->
     <footer class="bg-[#1d3557] text-white py-10 text-center text-sm">
-      © <script>document.write(new Date().getFullYear())</script> Radius Digital — helping UK businesses turn listings into leads.
+      © <span id="year"></span> Radius Digital — helping UK businesses turn listings into leads.
     </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
